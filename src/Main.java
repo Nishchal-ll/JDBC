@@ -23,6 +23,13 @@ switch(num1) {
             System.out.println("Updating a student");
             break;
 
+    case 4:
+        System.out.println("Deleting a student");
+        break;
+
+        default:
+            System.out.println("Invalid input");
+
 }
         try {
             Connection con = DriverManager.getConnection(url, user, pass);
