@@ -1,11 +1,25 @@
 import java.sql.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
         String url = "jdbc:mysql://localhost:3306/java";
         String user = "root";
         String pass = "";
+        System.out.println("Enter a number");
+int num1= input.nextInt();
+switch(num1) {
+    case 1:
+        System.out.println("Adding a student");
+        break;
 
+    case 2:
+        System.out.println("Reading a student");
+        break;
+
+}
         try {
             Connection con = DriverManager.getConnection(url, user, pass);
             System.out.println("✅ Connected to Database Successfully!");
