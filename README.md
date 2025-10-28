@@ -13,3 +13,9 @@ It allows users to **Add**, **View**, **Update**, and **Delete** student records
 ✅ Clean modular code (separated model, DAO, and main class)
 
 ---
+## 🧠 Concepts Used
+
+- **Core Java** (OOP, Scanner, Loops, Exception Handling)  
+- **JDBC** (Connecting Java with MySQL)  
+- **CRUD Operations** (Create, Read, Update, Delete)  
+- **SQL Queries** (INSERT, SELECT, UPDATE, DELETE)
