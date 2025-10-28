@@ -19,6 +19,10 @@ switch(num1) {
         System.out.println("Reading a student");
         break;
 
+        case 3:
+            System.out.println("Updating a student");
+            break;
+
 }
         try {
             Connection con = DriverManager.getConnection(url, user, pass);
