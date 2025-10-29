@@ -63,6 +63,13 @@ switch(num1) {
                 System.out.println(rs.getString("course"));
             }
 
+            PreparedStatement pst4 = con.prepareStatement("DELETE FROM students WHERE name = ?");
+            pst4.setString(1, "NishchalAcharya");
+            System.out.println(pst4.executeUpdate());
+
+
+
+
 
             con.close();
         } catch (Exception e) {
