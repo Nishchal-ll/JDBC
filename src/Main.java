@@ -53,6 +53,15 @@ switch(num1) {
                 System.out.println(pst2.executeQuery().getInt("course"));
             }
 
+            PreparedStatement pst3 = con.prepareStatement("SELECT * FROM students WHERE name = ?");
+            pst3.setString(1, "NishchalAcharya");
+            pst3.setString(2, "java");
+            ResultSet rs = pst3.executeQuery();
+            while (rs.next()) {
+                System.out.println(rs.getString("name"));
+                System.out.println(rs.getInt("age"));
+                System.out.println(rs.getString("course"));
+            }
 
 
             con.close();
