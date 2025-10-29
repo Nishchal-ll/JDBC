@@ -45,6 +45,16 @@ switch(num1) {
             else {
                 System.out.println("Data Insert Failed!");
             }
+
+
+            PreparedStatement pst2 = con.prepareStatement("SELECT * FROM students");
+            while (pst2.executeQuery().next()) {
+                System.out.println(pst2.executeQuery().getString("name"));
+                System.out.println(pst2.executeQuery().getInt("age"));
+                System.out.println(pst2.executeQuery().getInt("course"));
+            }
+
+
             con.close();
         } catch (Exception e) {
             System.out.println("❌ Connection Failed!");
