@@ -58,7 +58,7 @@ public class StudentService {
             PreparedStatement pst = con.prepareStatement("DELETE FROM students WHERE id=?");
             pst.setInt(1, id);
             pst.executeUpdate();
-            System.out.println("🗑 Student deleted!");
+            System.out.println(" Student deleted!");
         } catch (SQLException e) {
             e.printStackTrace();
         }
